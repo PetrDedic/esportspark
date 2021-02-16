@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@font-face {
+  font-family: AvantGarde;
+  src: url(./fonts/ITCAvantGardeStdMd.otf);
+}
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 300vh;
+  background-color: #0b1d51;
+}
+
+body {
+  background-image: url(./media/bg.svg);
+  height: 100%;
+  opacity: 1;
+  background-size: cover;
+  background-position: top;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.my-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+  background: rgba(12, 12, 12, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: #3da5d9 5px solid;
+}
+.my-navbar .sticky {
+  padding: 15px 0;
+  background: rgba(12, 12, 12, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.my-navbar .sticky .logo a span {
+  color: #fff;
+}
+.my-navbar .sticky .menu li a:hover {
+  color: #f02d3a;
+}
+.my-navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.my-navbar .logo a span {
+  color: #f02d3a;
+  transition: all 0.3s ease;
+}
+.my-navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.my-navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.my-navbar .menu li a:hover {
+  color: #f02d3a;
+  text-decoration: none;
+}
+@media (max-width: 947px) {
+  .my-navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: rgba(12, 12, 12, 0.712);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .my-navbar .menu li {
+    display: block;
+  }
+  .my-navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .my-navbar .sticky {
+    padding: 15px 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .my-navbar .menu.active {
+    left: 0;
+  }
+}
+
+/* menu btn styling */
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+}
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: #f02d3a;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn .show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f02d3a;
+  transition: width 0.3s;
+}
+
+.underline:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+h1 {
+  padding: 20px;
+  font-family: AvantGarde;
+  color: #fafaff;
+  font-size: 64px;
+  padding-top: 8%;
+  font-weight: bold;
+  background-color: #0b1d51;
+  margin: 0;
+}
+
+/* gallery */
+#gallery {
+  float: left;
+  height: auto;
+  width: 100%;
+  background-color: #0b1d51;
+}
+#gallery * {
+  background-color: #0b1d51;
+}
+
+div.stretchy-wrapper {
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  position: relative;
+  background: blue;
+}
+div.stretchy-wrapper div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.slides {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
