@@ -48,6 +48,9 @@ html {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
+  @media (max-width: 947px) {
+    padding: 0 30px;
+  }
 }
 
 .my-navbar {
@@ -106,6 +109,10 @@ html {
     }
   }
 
+  img {
+    height: 36px;
+  }
+
   .menu {
     li {
       list-style: none;
@@ -150,6 +157,10 @@ html {
           font-size: 25px;
         }
       }
+    }
+
+    img {
+      height: 24px;
     }
 
     .sticky {
@@ -224,7 +235,7 @@ h1 {
   font-family: AvantGarde;
   color: $brand-white;
   font-size: 64px;
-  padding-top: 8%;
+  padding-top: 120px;
   font-weight: bold;
   background-color: $brand-background;
   margin: 0;

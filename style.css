@@ -38,6 +38,11 @@ html {
   padding: 0 80px;
   margin: auto;
 }
+@media (max-width: 947px) {
+  .max-width {
+    padding: 0 30px;
+  }
+}
 
 .my-navbar {
   position: fixed;
@@ -76,6 +81,9 @@ html {
 .my-navbar .logo a span {
   color: #f02d3a;
   transition: all 0.3s ease;
+}
+.my-navbar img {
+  height: 36px;
 }
 .my-navbar .menu li {
   list-style: none;
@@ -116,6 +124,9 @@ html {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
+  }
+  .my-navbar img {
+    height: 24px;
   }
   .my-navbar .sticky {
     padding: 15px 0;
@@ -189,7 +200,7 @@ h1 {
   font-family: AvantGarde;
   color: #fafaff;
   font-size: 64px;
-  padding-top: 8%;
+  padding-top: 120px;
   font-weight: bold;
   background-color: #0b1d51;
   margin: 0;
