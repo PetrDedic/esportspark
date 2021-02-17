@@ -226,8 +226,6 @@ header img {
   float: left;
   height: auto;
   width: 100%;
-  background-color: #0b1d51;
-  background-image: url(./media/Trianglify.png);
 }
 #gallery * {
   background-color: #0b1d51;
@@ -254,6 +252,17 @@ div.stretchy-wrapper div {
 
 .slides {
   display: none;
+}
+
+.one-one {
+  width: 20%;
+  height: 20vw;
+  float: left;
+  background: #f02d3a !important;
+  border-bottom: #f02d3a 15px solid;
+}
+.one-one img {
+  background: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

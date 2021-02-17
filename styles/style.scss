@@ -263,8 +263,6 @@ header {
   height: auto;
   width: 100%;
 
-  background-color: $brand-background;
-  background-image: url(./media/Trianglify.png);
   * {
     background-color: $brand-background;
     background-image: url(./media/Trianglify.png);
@@ -293,4 +291,16 @@ div.stretchy-wrapper {
 
 .slides {
   display: none;
+}
+
+.one-one {
+  width: 20%;
+  height: 20vw;
+  float: left;
+  background: $brand-red !important;
+  border-bottom: $brand-red 15px solid;
+
+  img {
+    background: none !important;
+  }
 }
